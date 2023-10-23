@@ -1,3 +1,4 @@
+require('colors');
 const functions = {};
 
 const signo = (numero)=> {
@@ -210,37 +211,37 @@ const interfazSigno = (numero) => {
 const interfazcaracter = (caracterBuscado) => {
     
     console.log('*********************************************************'.yellow);
-    console.log(`*                 `.yellow,                            `FUNCION CARACTER`.bgRed,`                    *`.yellow);
+    console.log(`*                  `.yellow,                            `FUNCION CARACTER`.bgRed,`                   *`.yellow);
     console.log('*********************************************************'.yellow);
-    console.log(`*            `.yellow,         `el caracter`.blue,` ${caracterBuscado}`.green, ` : `.blue,` `+ functions.encontrarCaracter(caracterBuscado).green,`         *`.yellow);
+    console.log(`*         `.yellow,         `el caracter`.blue,` ${caracterBuscado}`.green, ` : `.blue,` `+ functions.encontrarCaracter(caracterBuscado).green,`            *`.yellow);
     console.log(`*********************************************************\n`.yellow);
 
 }
 const interfazBebida = (bebida) => {
     
-    console.log('*********************************************************');
-    console.log('*                   FUNCION BEBIDA                      *');
-    console.log('*********************************************************');
-    console.log(`*        La bebida ${bebida} ` + functions.encontrarBebida(bebida)+`       *`);
-    console.log(`*********************************************************\n`);
+    console.log('*********************************************************'.cyan);
+    console.log(`*                 `.cyan,                              `FUNCION BEBIDA`.bgGreen,`                      *`.cyan);
+    console.log('*********************************************************'.cyan);
+    console.log(`*          `.cyan,        `La bebida`.yellow,` ${bebida}`.green,` ` + functions.encontrarBebida(bebida).green,`          *`.cyan);
+    console.log(`*********************************************************\n`.cyan);
 
 }
 const interfazmedios = (medio) => {
     
-    console.log('*********************************************************');
-    console.log('*                   TRANSPORTES                        *');
-    console.log('*********************************************************');
-    console.log(`*        el   ${medio} requiere ` + functions.medioTransporte(medio)+`       *`);
-    console.log(`*********************************************************\n`);
+    console.log('*********************************************************'.yellow);
+    console.log(`*                  `.yellow,                            `TRANSPORTES`.bgRed,`                        *`.yellow);
+    console.log('*********************************************************'.yellow);
+    console.log(`*`.yellow,       `el`.blue,` ${medio}`.green, `requiere`.blue, ` `+ functions.medioTransporte(medio).green,`*`.yellow);
+    console.log(`*********************************************************\n`.yellow);
 
 }
 const interfazDescuento = (cantidad, precio, descuento) => {
     
-    console.log('*********************************************************');
-    console.log('*                   DESCUENTOS                       *');
-    console.log('*********************************************************');
-    console.log(`*        el   ${cantidad, precio, descuento} requiere ` + functions.facturaProducto(cantidad, precio, descuento)+`       *`);
-    console.log(`*********************************************************\n`);
+    console.log('*********************************************************'.cyan);
+    console.log(`*                     `.cyan,                              `DESCUENTOS`.bgGreen,`                      *`.cyan);
+    console.log('*********************************************************'.cyan);
+    console.log(`*       `.cyan,`      Ganastes el  ${cantidad, precio, descuento} % ` + functions.facturaProducto(cantidad, precio, descuento)+`              *`.cyan);
+    console.log(`*********************************************************\n`.cyan);
 
 }
 const interfazComidabebida = (menu) => {
